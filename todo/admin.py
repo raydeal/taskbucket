@@ -4,9 +4,9 @@ from .models import Location, UserTask
 
 @admin.register(Location)
 class LocationAdmin(admin.ModelAdmin):
-    pass
+    list_display=['name','country_code','state_code','longitude','latitude','created','modified']
 
 @admin.register(UserTask)
 class UserTaskAdmin(admin.ModelAdmin):
-    pass
+    list_display=['title', 'user', 'location', 'status', 'created', 'modified']
 
