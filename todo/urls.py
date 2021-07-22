@@ -1,6 +1,7 @@
-# from django.urls import path
+from django.urls import path
+
+from .views import UserTaskListView
 
 urlpatterns = [
-    # path('admin/'),
-    # path('todo/', include('todo.urls'))
+     path('', UserTaskListView.as_view()),
 ]

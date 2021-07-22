@@ -1,1 +1,8 @@
 # from django.shortcuts import render
+
+from django.views.generic import ListView
+
+from .models import UserTask
+
+class UserTaskListView(ListView):
+    model = UserTask
