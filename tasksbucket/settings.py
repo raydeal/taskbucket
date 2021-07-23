@@ -132,5 +132,5 @@ STATIC_URL = "/static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-#Open Weather keys
+# Open Weather keys
 OPENWEATHER_API_KEY = os.environ.get("OPENWEATHER_API_KEY")
